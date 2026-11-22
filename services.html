@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services &amp; Pricing | BrightByte Studio</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inconsolata:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <span class="logo-mark"><i></i><i></i><i></i><i></i></span>
+        <span>Bright<b>Byte</b></span>
+      </a>
+      <button type="button" class="menu-toggle" id="menu-toggle">Menu</button>
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="contact.html" class="nav-btn">Get Started</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Banner -->
+    <section class="page-banner">
+      <div class="container">
+        <span class="highlight-tag">Products &amp; Services</span>
+        <h1>Honest web packages with clear <span class="underline-accent">RM pricing.</span></h1>
+        <p>Choose a package that fits your needs, compare deliverables below, or download our rate card for easy sharing.</p>
+      </div>
+    </section>
+
+    <!-- Core Services Cards -->
+    <section class="section section-cream">
+      <div class="container">
+        <span class="section-label">What We Offer</span>
+        <h2>Three focused services for growing teams.</h2>
+        <div class="three-col" style="margin-top: 28px;">
+          <div class="service-card">
+            <span class="service-num">01</span>
+            <h3>Responsive Web Development</h3>
+            <p class="muted">Multi-page websites written in clean HTML, CSS, and JavaScript that look sharp on desktop, tablet, and smartphones.</p>
+          </div>
+          <div class="service-card">
+            <span class="service-num">02</span>
+            <h3>Interactive Forms &amp; Inquiries</h3>
+            <p class="muted">Custom contact, booking, and quotation forms with proper input fields and client-side JavaScript validation.</p>
+          </div>
+          <div class="service-card">
+            <span class="service-num">03</span>
+            <h3>Digital Catalogs &amp; Rate Cards</h3>
+            <p class="muted">Well-structured product and pricing tables paired with downloadable CSV sheets so customers can compare easily.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Table Section -->
+    <section class="section section-white" id="pricing">
+      <div class="container">
+        <span class="section-label">Service Packages</span>
+        <h2>Pricing Table (RM)</h2>
+        <p class="muted">Filter by category to compare packages, timelines, and starting rates in Malaysian Ringgit.</p>
+
+        <div class="filter-bar">
+          <button type="button" class="filter-btn active" data-category="all">All Services</button>
+          <button type="button" class="filter-btn" data-category="web">Web Development</button>
+          <button type="button" class="filter-btn" data-category="forms">Forms &amp; Inquiries</button>
+          <button type="button" class="filter-btn" data-category="catalog">Digital Catalogs</button>
+        </div>
+
+        <div class="table-container">
+          <table class="data-table">
+            <caption>BrightByte Studio Service Packages &amp; Rate Card (MYR)</caption>
+            <thead>
+              <tr>
+                <th>Service Category</th>
+                <th>Package</th>
+                <th>Included Deliverables</th>
+                <th>Timeline</th>
+                <th>Price (RM)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="service-row" data-category="web">
+                <td><strong>Responsive Web Development</strong></td>
+                <td>Starter Website</td>
+                <td>Up to 4 responsive pages (Home, About, Services, Contact) optimized for mobile, tablet, and desktop</td>
+                <td>1&ndash;2 weeks</td>
+                <td class="price-cell">RM 850</td>
+              </tr>
+              <tr class="service-row" data-category="web">
+                <td><strong>Responsive Web Development</strong></td>
+                <td>Business Growth Website</td>
+                <td>Up to 8 responsive pages, custom layout styling, interactive sections, and performance checks</td>
+                <td>2&ndash;3 weeks</td>
+                <td class="price-cell">RM 1,650</td>
+              </tr>
+              <tr class="service-row" data-category="forms">
+                <td><strong>Interactive Forms &amp; Inquiries</strong></td>
+                <td>Essential Inquiry Form</td>
+                <td>Single contact or consultation form with client-side validation and instant confirmation feedback</td>
+                <td>3&ndash;5 days</td>
+                <td class="price-cell">RM 350</td>
+              </tr>
+              <tr class="service-row" data-category="forms">
+                <td><strong>Interactive Forms &amp; Inquiries</strong></td>
+                <td>Multi-Field Form Suite</td>
+                <td>Multiple structured forms (booking, quotation, feedback) with full field validation</td>
+                <td>1 week</td>
+                <td class="price-cell">RM 650</td>
+              </tr>
+              <tr class="service-row" data-category="catalog">
+                <td><strong>Digital Catalog &amp; Pricing</strong></td>
+                <td>Basic Rate Card</td>
+                <td>Responsive service pricing table plus a downloadable CSV spreadsheet for clients</td>
+                <td>3&ndash;5 days</td>
+                <td class="price-cell">RM 280</td>
+              </tr>
+              <tr class="service-row" data-category="catalog">
+                <td><strong>Digital Catalog &amp; Pricing</strong></td>
+                <td>Full Product Catalog</td>
+                <td>Categorized product tables, interactive category filters, and downloadable catalog file</td>
+                <td>1&ndash;2 weeks</td>
+                <td class="price-cell">RM 550</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Downloadable File Link Box -->
+        <div class="download-box">
+          <div>
+            <h3>Download Full Service Rate Card (CSV)</h3>
+            <p class="muted" style="margin-bottom: 0;">Need to review our RM pricing offline or share it with your team? Download our spreadsheet file directly.</p>
+          </div>
+          <a class="btn btn-primary" href="downloads/brightbyte-services.csv" download>Download CSV &darr;</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="logo" href="index.html">
+            <span class="logo-mark"><i></i><i></i><i></i><i></i></span>
+            <span>Bright<b>Byte</b></span>
+          </a>
+          <p>Quality web solutions at reasonable prices for small businesses and student organizations in Kuala Lumpur.</p>
+          <p>Email: <a href="mailto:hello@brightbyte.my" style="color: #CDC64D;">hello@brightbyte.my</a><br>Location: Kuala Lumpur, Malaysia</p>
+        </div>
+        <div>
+          <h3 class="footer-heading">Pages</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services &amp; Pricing</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-heading">Resources</h3>
+          <ul class="footer-links">
+            <li><a href="downloads/brightbyte-services.csv" download>Download Rate Card (CSV)</a></li>
+            <li><a href="https://knapsackcreative.com/" target="_blank">Reference Site: Knapsack Creative</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year">2026</span> BrightByte Studio. All rights reserved.</p>
+        <p>Built by Alham, Qistina &amp; Maira &mdash; Kuala Lumpur</p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
